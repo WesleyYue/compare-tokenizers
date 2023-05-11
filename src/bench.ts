@@ -9,7 +9,7 @@ async function main() {
   for (const tokenizer of tokenizers) {
     bench.add(tokenizer.label, () => {
 //      for (let i = 0; i < fixtures.length; i++) {
-        const res = tokenizer.encode(fixtures[8])
+        const res = tokenizer.encode(fixtures[9])
       //}
     })
   }
