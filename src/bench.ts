@@ -4,7 +4,7 @@ import { fixtures } from './fixtures'
 import { tokenizers } from './tokenizers'
 
 async function main() {
-  const bench = new Bench({ iterations: 10000 })
+  const bench = new Bench({ iterations: 100 })
 
   for (const tokenizer of tokenizers) {
     bench.add(tokenizer.label, () => {
