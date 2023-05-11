@@ -4,13 +4,13 @@ import { fixtures } from './fixtures'
 import { tokenizers } from './tokenizers'
 
 async function main() {
-  const bench = new Bench({ iterations: 25 })
+  const bench = new Bench({ iterations: 100 })
 
   for (const tokenizer of tokenizers) {
     bench.add(tokenizer.label, () => {
-      for (let i = 0; i < fixtures.length; i++) {
-        const res = tokenizer.encode(fixtures[i])
-      }
+//      for (let i = 0; i < fixtures.length; i++) {
+        const res = tokenizer.encode(fixtures[8])
+      //}
     })
   }
 
